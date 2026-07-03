@@ -1,0 +1,19 @@
+// abstracts
+@use "./abstracts/mixins" as mixin;
+@use "./abstracts/variables" as v;
+
+// base
+@use "./base/base";
+
+// components
+@use "./components/components";
+
+// layout
+@use "./layout/layout";
+
+//themes
+@use "./themes/themes";
+
+body {
+  font-family: v.$primary-font;
+}

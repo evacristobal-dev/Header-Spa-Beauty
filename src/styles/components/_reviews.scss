@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as v;
+
+.review_1 {
+    position: absolute;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    top: 50%;
+    right: 3%;
+    color: v.$primary-color;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+
+    img {
+        max-width: 25px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+}
+
+.review_2 {
+    position: absolute;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    bottom: 12%;
+    right: 15%;
+    color: v.$primary-color;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    
+
+    img {
+        max-width: 25px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+}
+

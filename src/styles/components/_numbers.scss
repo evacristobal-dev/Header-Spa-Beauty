@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as v;
+
+.numbers {
+
+   display: inline-flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    background-color: v.$bg-grey;
+    margin-bottom: 32px;
+    margin-left: 20px;
+
+    .item {
+        text-align: center;
+    }
+
+    .item_title {
+        color: v.$primary-color;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: normal;  
+        text-align: center;
+        margin-top:16px;
+        margin-bottom: 5px;
+    }
+
+    .item_description {
+        color: v.$secondary-color;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 0px;
+    }   
+}
+
+.numbers:hover { 
+    box-shadow: 0px 10px 13px -7px #000000, 13px 4px 16px 7px rgba(169,214,203,0.31);
+}

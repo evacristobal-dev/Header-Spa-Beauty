@@ -1,0 +1,64 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as v;
+
+nav.nav-primary {
+    ul {
+        @include mixin.reset-list();
+
+        a {
+            color: v.$primary-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: v.$secondary-color;
+        }
+    }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+}
+
+.sub_menu {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  
+}
+
+.dropdown:hover .sub_menu {
+  visibility: visible;
+  display: block;
+  background: transparent;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sub_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+}
+
+.dropdown:hover .sub_menu {
+  display: block;
+}

@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as mixin;
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-login {
+  ul {
+    @include mixin.reset-list();
+    gap: 32px;
+
+    a {
+      color: v.$primary-color;
+      text-decoration: none;
+    }
+    a:hover {
+        color: v.$secondary-color;
+    }
+
+    a.btn {
+      @include mixin.button();
+      transition-duration: .5s;
+    }
+
+    a.btn:hover {
+      background-color: v.$secondary-color;
+      color: v.$primary-color;
+    }
+  }
+}
+

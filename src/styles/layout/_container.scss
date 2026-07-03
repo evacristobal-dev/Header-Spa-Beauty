@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as v;
+
+.container {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #FAF8F5;
+    background: linear-gradient(102deg, rgba(250, 248, 245, 1) 0%, rgba(221, 240, 232, 1) 50%, rgba(169, 214, 203, 1) 100%);
+}
+
+.woman img {
+    position: absolute;
+    max-width: 70%;
+    bottom: 0;
+    right: 10%;
+    z-index: 1;
+}
